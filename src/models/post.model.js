@@ -7,7 +7,7 @@ const postSchema = new monogoose.Schema({
         type: String,
        default: ""
     },
-    image: {
+    imageUrl: {
         type: String,
         required: [true, "Image is required"]
     },

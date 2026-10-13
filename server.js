@@ -1,6 +1,9 @@
 require('dotenv').config();
 const app = require('./src/app');
 const connectToDatabase = require('./src/config/databased');
+const cookieParser = require('cookie-parser');
+
+app.use(cookieParser());
 
 connectToDatabase();
 
